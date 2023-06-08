@@ -19,12 +19,12 @@ class Solution {
             }
         }
         int maxcost=costtill[0];
-        int maxnode=0;
+        //int maxnode=0;
         for(int i=0;i<n;i++){
             if(maxcost<costtill[i])
             {
                 maxcost=costtill[i];
-                maxnode=i;
+                //maxnode=i;
             }
         }
         return maxcost;
