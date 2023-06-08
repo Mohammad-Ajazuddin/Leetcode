@@ -29,11 +29,11 @@ class Solution {
         }
         return maxcost;
 //         int ans=0;
-//         while(manager[maxnode]!=-1)
-//         {
-//             ans+=informTime[manager[maxnode]];
-//             maxnode=manager[maxnode];
-//         }
+//         while(manager[maxnode]!=-1)                    when executed with this commented section 
+//         {                                              Runtime: 249 ms Memory Usage: 57.6 MB
+//             ans+=informTime[manager[maxnode]];         Actually I calculated cost for each leaf node already
+//             maxnode=manager[maxnode];                  Just I need Max cost. So this is not required
+//         }                                              But after removing I got Runtime: 251 ms Memory Usage: 61.8 MB
 //         return ans;
     }
 }
