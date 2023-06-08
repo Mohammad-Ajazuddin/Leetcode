@@ -28,5 +28,12 @@ class Solution {
             }
         }
         return maxcost;
+//         int ans=0;
+//         while(manager[maxnode]!=-1)
+//         {
+//             ans+=informTime[manager[maxnode]];
+//             maxnode=manager[maxnode];
+//         }
+//         return ans;
     }
 }
