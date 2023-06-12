@@ -33,21 +33,42 @@ class Solution {
         //     }
         // }
         // return result;   MEMORY LIMIT EXCEEDING
-        while (current < size) {
-            if (current != size - 1 && nums[current] + 1 == nums[current + 1]) {
+        //There were redundancies previously
+        while(current<size)
+        {
+            if(current!=size-1 && (nums[current]+1==nums[current+1]))
+            {
                 current++;
-            } 
-            else {
-                StringBuilder range = new StringBuilder();
-                range.append(nums[start]);
-                if (start != current) {
-                    range.append("->").append(nums[current]);
+            }
+            else{
+                if(nums[start]!=nums[current])
+                {
+                    result.add(nums[start] + "->" + nums[current]);
+                    current++;
+                    start=current;
                 }
-                result.add(range.toString());
-                current++;
-                start = current;
+                else{
+                    result.add(nums[start] + "");
+                    current++;
+                    start=current;
+                }
             }
         }
+        // while (current < size) {
+        //     if (current != size - 1 && nums[current] + 1 == nums[current + 1]) {
+        //         current++;
+        //     } 
+        //     else {
+        //         StringBuilder range = new StringBuilder();
+        //         range.append(nums[start]);
+        //         if (start != current) {
+        //             range.append("->").append(nums[current]);
+        //         }
+        //         result.add(range.toString());
+        //         current++;
+        //         start = current;
+        //     }
+        // }
         return result;
     }
 }
