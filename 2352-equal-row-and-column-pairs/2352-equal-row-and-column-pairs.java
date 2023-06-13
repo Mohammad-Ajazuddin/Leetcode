@@ -5,17 +5,6 @@ class Solution {
         int count=0;
         StringBuffer s1 = new StringBuffer();
         StringBuffer s2 = new StringBuffer();
-        // if(rows==2)
-        // {
-        //     if((grid[0][0]==grid[0][1]) && grid[1][0]==grid[1][1])
-        //     {
-        //         return 4;
-        //     }
-        //     else if((grid[0][0]==grid[1][1])||(grid[0][1]==grid[1][0]))
-        //     {
-        //         return 2;
-        //     }
-        // }
         for(int i=0;i<rows;i++)
         {
             s1.setLength(0);
@@ -54,4 +43,4 @@ class Solution {
         }
         return count;
     }
-} //WRONG ANSWER
+}
