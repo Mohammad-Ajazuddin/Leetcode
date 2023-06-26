@@ -39,7 +39,7 @@ class Solution {
 
         // Calculate the values of nCr using Pascal's Triangle
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= Math.min(i, r); j++) {
+            for (int j = 1; j <= i && j<=r; j++) {
                 dp[i][j] = (dp[i - 1][j - 1] + dp[i - 1][j]) % mod;
             }
         }
