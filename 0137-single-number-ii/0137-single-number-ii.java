@@ -14,10 +14,9 @@ class Solution {
         for(int key:map.keySet() ){
             if(map.get(key)==1){
                 ans=key;
+                break;
             }
         }
         return ans;
-        //base cases
-          
     }
 }
