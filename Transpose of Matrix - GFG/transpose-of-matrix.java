@@ -44,15 +44,9 @@ class Solution
         {
             for(int j=i+1;j<n;j++)
             {
-                if(i==j)
-                {
-                    continue;
-                }
-                else{
-                    int temp = a[i][j];
-                    a[i][j] = a[j][i];
-                    a[j][i] = temp;
-                }
+                int temp = a[i][j];
+                a[i][j] = a[j][i];
+                a[j][i] = temp;
             }
         }
     }
