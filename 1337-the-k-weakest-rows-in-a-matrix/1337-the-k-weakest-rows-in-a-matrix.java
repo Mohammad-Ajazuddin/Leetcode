@@ -22,6 +22,7 @@ class Solution {
                 else if(j==0)
                 {
                     rowSoldiers.put(i,0);
+                    break;
                 }
             }
         }
