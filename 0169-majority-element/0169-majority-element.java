@@ -44,20 +44,21 @@ class Solution {
                 count--;
             }
         }
+        return ele;
         //verify the ele as majority or not 
         //This part is actually not necessary as it is mentioned in q majority ele always exists
-        count = 0;
-        for(int i=0;i<n;i++)
-        {
-            if(ele==nums[i])
-            {
-                count++;
-            }
-        }
-        if(count>(n/2))
-        {
-            return ele;
-        }
-        return -1;
+        // count = 0;
+        // for(int i=0;i<n;i++)
+        // {
+        //     if(ele==nums[i])
+        //     {
+        //         count++;
+        //     }
+        // }
+        // if(count>(n/2))
+        // {
+        //     return ele;
+        // }
+        // return -1;
     }
 }
